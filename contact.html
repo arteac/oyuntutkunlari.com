@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İLETİŞİM</title>
+    <link rel="stylesheet" href="pages_css/contact.css">
+    <meta name="google" content="notranslate">
+    <link rel="shortcut icon" type="jpg" href="img/shortcut.png">
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-two">abdullaholuc37@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Mesaj Gönderin</div>
+        <p>Görüş ve istekleriniz için</p>
+        <form id="contactForm">
+          <div class="input-box">
+            <input type="text" id="adInput" placeholder="Ad">
+          </div>
+          <div class="input-box">
+            <input type="text" id="soyadInput" placeholder="Soyad">
+          </div>
+          <div class="input-box message-box">
+            <input type="email" id="emailInput" required placeholder="Email">
+          </div>
+          <!-- Özel buton eklendi -->
+          <div class="button">
+            <button class="custom-button" type="button" onclick="showSadMessage()">Gönder</button>
+          </div>
+        </form>
+        <div class="sad-message" id="sadMessage">ONU ŞİMDİLİK YAPAMIYORUZ MAALESEF :[</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showSadMessage() {
+      var sadMessage = document.getElementById("sadMessage");
+      sadMessage.style.display = "block";
+      requestAnimationFrame(function() {
+        sadMessage.style.transform = "translate(-50%, -50%) scale(1)";
+      });
+    }
+  </script>
+</body>
+</html>
+
+</body>
+</html>
